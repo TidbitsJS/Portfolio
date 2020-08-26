@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.intro h1 {
+    font-size: 4rem;
+}
+
+.intro p {
+    font-size: 21px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.intro span {
+    border-top: 4px solid deepskyblue;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem 0.3rem 10rem 8rem;
+    box-shadow: 1px 2px 4px black;
+}
+
+.about-container {
+    background: #FFFFFF;
+    background: -webkit-linear-gradient(top right, #FFFFFF, #9FEEB9);
+    background: -moz-linear-gradient(top right, #FFFFFF, #9FEEB9);
+    background: linear-gradient(to bottom right, #FFFFFF, #9FEEB9);
+}

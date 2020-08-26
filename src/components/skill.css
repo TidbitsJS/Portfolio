@@ -1,0 +1,86 @@
+.skills {
+ background: #f1f5f8;
+ padding-bottom: 3rem;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.skill h1 {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+
+.underline {
+    width: 200px;
+    border-top: 4px solid deepskyblue;
+    border-radius: 50% 70%;
+    margin-bottom: 5rem;
+}
+
+.skill-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-gap: 2rem;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 -20px 15px -10px rgba(255, 255, 0, 0.3) inset,
+    0 20px 15px -10px rgba(255, 255, 0, 0.3) inset,
+    0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.skill-box:hover {
+    background-color: #2caeba;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.skill-head {
+    margin-top: 1rem;
+    font-size: 4rem;
+}
+
+.skill-subhead {
+    font-size: 2rem;
+}
+
+.skill-para {
+    margin-top: 1rem;
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dash {
+    border-top: 4px solid deepskyblue;
+    margin-top: 0.5rem;
+    width: 50px;
+}
+
+@media (max-width: 1000px) {
+    .skill-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 690px) {
+    .skill-group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
