@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Project from 'assets/project.jpeg'
 import 'components/fetch/project.css'
 
-const ProjectBox = ({repoData}) =>{
+const ProjectBox = ({repo}) =>{
+    const [query, setQuery] = useState(repo)
+    const [repoData, setData] = useState({})
+
+    useEffect(() => {
+        console.log("Hello")
+        fetch(`https://api.github.com/repos/TidbitsJS/${query}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                setData(data)
+            })
+    }, [query])
+
+    var hrf = `https://tidbitsjs.github.io/${repo}`
+
+    console.log(repoData.html_url)
     return (
         <div className="project-box">
             <div className="project-head">
               <img src={Project} alt="project"/>
-              <a href="https://github.com/TidbitsJS"
+              <a href={hrf}
                  style={{textDecoration: 'none'}} 
                  className="project-icon">
                  <i className="fas fa-home"></i>

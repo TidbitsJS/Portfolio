@@ -4,20 +4,7 @@ import ProjectBox from 'components/fetch/ProjectBox'
 import {Button} from 'react-bootstrap'
 
 const Projects = () => {
-    const [query, setQuery] = useState('Contact-Manager')
-    const [repoData, setData] = useState({})
 
-    useEffect(() => {
-        console.log("Hello")
-        fetch(`https://api.github.com/repos/TidbitsJS/${query}`)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
-                setData(data)
-            })
-    }, [query])
-
-    console.log(repoData.html_url)
     return (
         <div className="projects">
             <Container fluid>
@@ -26,10 +13,11 @@ const Projects = () => {
                     <div className="underline"></div>
                 </div>
                 <div className="project-list">
-                    <ProjectBox repoData={repoData}/>
-                    <ProjectBox repoData={repoData}/>
-                    <ProjectBox repoData={repoData}/>
-                    <ProjectBox repoData={repoData}/>
+                    <ProjectBox repo="Tweet-App"/>
+                    <ProjectBox repo="Github-Jobs"/>
+                    <ProjectBox repo="Food-Menu"/>
+                    <ProjectBox repo="Weather-App"/>
+                    <ProjectBox repo="Typing-Game"/>
                 </div>
                 <div className="more">
                    <Button variant="danger">
