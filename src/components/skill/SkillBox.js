@@ -9,10 +9,7 @@ export class SkillBox extends Component {
                 <p className="skill-head"><i className={data.icon}></i></p>
                 <h4 className="skill-subhead">{data.subText}</h4>
                 <div className="dash"></div>
-                <p className="skill-para">I'm baby meditation tofu chillwave, 
-                   distillery messenger bag thundercats 
-                   chicharrones kale chips gochujang. 
-                   Banh mi direct trade marfa salvia.</p>
+                <p className="skill-para"> {data.para} </p>
             </div>
         )
     }

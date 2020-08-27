@@ -20,7 +20,7 @@ const Projects = () => {
                     <ProjectBox repo="Typing-Game"/>
                 </div>
                 <div className="more">
-                   <Button variant="danger">
+                   <Button variant="danger" style={{marginBottom: '2.5rem'}}>
                        <a href="https://github.com/TidbitsJS"
                           style={{textDecoration: 'none', color: 'black'}}
                        >

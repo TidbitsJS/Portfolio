@@ -31,9 +31,9 @@ const ProjectBox = ({repo}) =>{
             </div>
             <div className="project-info">
                 <h4>{repoData.name}</h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Rerum eveniet amet odit aperiam, 
-                    provident cum possimus sapiente minus quos! Ipsum?  </p>
+                <p> Web Development Project developed with HTML5, CSS3, Javascript, ReactJS, bootstrap and other.
+                    Click on HOME button to see live demo of project. You can get the source code by clicking the link below. 
+                    Other info is available on my Github profile. Do visit for more</p>
                 <div className="project-foot">
                     <span>
                       <i className="fab fa-github"></i>

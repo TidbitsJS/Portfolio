@@ -1,3 +1,7 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 @media (min-width: 990px) {
   .navbar-collapse {
     display: flex;
@@ -7,5 +11,37 @@
 
   .nav-link {
     margin: 0 1rem;
+  }
+}
+
+.home {
+  background-color: #f1f5f8;
+  width: 100vw;
+}
+
+.footer {
+  padding: 2rem;
+  background-color: #292b2c;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer p {
+  font-size: 25px;
+}
+
+@media (max-width: 420px) {
+  .footer h1 {
+    font-size: 1.7rem;
+  }
+
+  .footer p {
+    font-size: 21px;
   }
 }

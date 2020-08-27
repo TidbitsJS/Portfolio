@@ -3,13 +3,17 @@ import { Navbar, Nav } from 'react-bootstrap'
 import About from 'components/about/About'
 import Skill from 'components/skill/Skill'
 import Projects from 'components/fetch/Projects'
+import Contact from 'components/contact/Contact'
 
   export class Home extends Component {
       
       render() {
           return (
             <div className="home">
-                 <Navbar collapseOnSelect expand="lg"  variant="light">
+                 <Navbar collapseOnSelect expand="lg" 
+                         bg="light"
+                         style={{width: '100vw'}} 
+                         fixed="top">
                     <Navbar.Brand href="#home" style={{fontSize: 27}}>
                        Portfolio
                     </Navbar.Brand>
@@ -25,6 +29,7 @@ import Projects from 'components/fetch/Projects'
                         </Nav>
                     </Navbar.Collapse>
                  </Navbar>
+
                  <section id="home">
                      <About />
                  </section>
@@ -34,6 +39,21 @@ import Projects from 'components/fetch/Projects'
                  <section id="project">
                      <Projects />
                  </section>
+                 <section id="contact">
+                      <Contact />
+                 </section>
+
+                 <section>
+                   <div className="footer">
+                      <h1>
+                        Made with love
+                        <i className="fas fa-heart" 
+                           style={{marginLeft: 15, color: 'red'}}></i>
+                      </h1>
+                      <p style={{marginTop: '1rem'}}>@Sujata Gunale</p>
+                   </div>
+                 </section>
+
             </div>
           )
     }
