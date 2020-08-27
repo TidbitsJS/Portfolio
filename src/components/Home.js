@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, NavLink } from 'react-bootstrap'
-import About from 'components/About'
-import Skill from 'components/Skill'
+import { Navbar, Nav } from 'react-bootstrap'
+import About from 'components/about/About'
+import Skill from 'components/skill/Skill'
+import Projects from 'components/fetch/Projects'
 
   export class Home extends Component {
       
@@ -24,11 +25,14 @@ import Skill from 'components/Skill'
                         </Nav>
                     </Navbar.Collapse>
                  </Navbar>
-                 <section id="#home">
-                    <About />
+                 <section id="home">
+                     <About />
                  </section>
-                 <section id="#skill">
+                 <section id="skill">
                      <Skill />
+                 </section>
+                 <section id="project">
+                     <Projects />
                  </section>
             </div>
           )

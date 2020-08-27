@@ -84,3 +84,9 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+@media (max-width: 400px) {
+    .skill h1 {
+        font-size: 3.5rem;
+    }
+}

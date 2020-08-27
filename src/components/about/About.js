@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Button } from 'react-bootstrap'
 import Me from 'assets/me.jpeg'
-import 'components/about.css' 
+import 'components/about/about.css' 
 
 export class About extends Component {
     render() {

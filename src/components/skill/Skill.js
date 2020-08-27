@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Container } from 'react-bootstrap'
-import 'components/skill.css'
-import SkillBox from 'components/SkillBox'
-import { html, react, javascript, cpp, python, bootstrap } from 'components/SkillData'
+import 'components/skill/skill.css'
+import SkillBox from 'components/skill/SkillBox'
+import { html, react, javascript, cpp, python, bootstrap } from 'components/about/SkillData'
 
 export class Skill extends Component {
     render() {
